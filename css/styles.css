@@ -42,6 +42,10 @@ img {
   padding-bottom: 120px;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
 
 /*HEADER*/
 
@@ -449,6 +453,7 @@ img {
 
 .footer-social {
   max-width: 208px;
+  margin-right: 80px;
 }
 
 .footer-social-title {
@@ -493,6 +498,67 @@ img {
   display: block;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form-action {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.footer-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 8px 16px;
+}
+
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-form-icon {
+  fill: #fff;
+  display: inline-block;
+
+}
 
 .modal-overlay {
   display: flex;
@@ -509,7 +575,7 @@ img {
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
