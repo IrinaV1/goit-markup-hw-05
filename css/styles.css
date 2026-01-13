@@ -581,9 +581,9 @@ button {
 }
 
 .modal-overlay {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -607,12 +607,17 @@ button {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   max-width: 408px;
+  max-height: 584px;
   border-radius: 4px;
   padding: 72px 24px 24px;
   display: flex;
   flex-direction: column;
-  max-height: 90%;
   overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .modal-btn-close {
@@ -621,15 +626,44 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .modal-close-icon {
   fill: #2e2f42;
 }
 
+.modal-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
 }
 
 .modal-btn {
