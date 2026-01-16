@@ -410,7 +410,8 @@
           Subscribe
         </p>
         <form class="footer-form-wrapper">
-          <input class="footer-input" type="email" placeholder="E-mail">
+          <label class="visually-hidden" for="footer-email">Email</label>
+          <input id="footer-email" class="footer-input" type="email" name="email" placeholder="E-mail">
 
           <button class="footer-form-btn" type="submit">
             Subscribe
@@ -423,20 +424,20 @@
     </div>
   </footer>
 
-  <div class="modal-overlay is-open" data-modal>
+  <div class="modal-overlay" data-modal>
     <div class="modal">
       <button aria-label="close" type="button" class="modal-btn-close" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-text">Leave your contacts and we will call you back</l>
+      <p class="modal-text">Leave your contacts and we will call you back</p>
 
       <form class="modal-form" name="contacts">
 
         <label class="modal-label" for="user">Name</label>
         <div class="modal-user">
-          <input id="user" class="modal-input" type="text" autofocus>
+          <input id="user" class="modal-input" type="text" name="user" autofocus>
           <svg class="user-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
@@ -444,7 +445,7 @@
 
         <label class="modal-label" for="phone">Phone</label>
         <div class="modal-user">
-          <input id="phone" class="modal-input" type="tel">
+          <input id="phone" class="modal-input" type="tel" name="phone">
           <svg class="user-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
@@ -452,7 +453,7 @@
 
         <label class="modal-label" for="modal-email">Email</label>
         <div class="modal-user">
-          <input id="modal-email" class="modal-input" type="email">
+          <input id="modal-email" class="modal-input" type="email" name="email-user">
           <svg class="user-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
@@ -463,7 +464,7 @@
 
         <div class="modal-checkbox">
           <input class="modal-checkbox-input visually-hidden" id="conditions" type="checkbox" value="privacy-Policy"
-            name="1">
+            name="checkbox">
           <label class="modal-checkbox-label" for="conditions">
             <span class="modal-checkbox-span">
               <svg class="modal-checkbox-icon" width="10" height="8">
